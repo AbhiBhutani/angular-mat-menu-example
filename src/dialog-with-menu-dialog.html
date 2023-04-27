@@ -1,0 +1,16 @@
+<mat-dialog-content>
+  <p>Some random text. Some random text. Some random text.</p>
+  <button mat-button mat-raised-button [matMenuTriggerFor]="actionMenu">
+    Menu
+  </button>
+  <mat-menu #actionMenu="matMenu" [hasBackdrop]="true">
+    <button mat-menu-item>View Details</button>
+    <button mat-menu-item>Open Details</button>
+  </mat-menu>
+</mat-dialog-content>
+<br /><br /><br /><br /><br />
+<div mat-dialog-actions>
+  <button mat-stroked-button cdkFocusInitial (click)="close()">
+    Close Dialog
+  </button>
+</div>
